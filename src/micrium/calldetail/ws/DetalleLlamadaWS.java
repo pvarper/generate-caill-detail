@@ -4,15 +4,16 @@ import java.net.URL;
 import java.util.Date;
 
 import javax.xml.datatype.XMLGregorianCalendar;
+
 import micrium.calldetail.bussines.SysParameter;
 import micrium.calldetail.result.Result;
 import micrium.calldetail.utils.BooleanUtil;
 import micrium.calldetail.utils.DateUtil;
 import micrium.calldetail.utils.NumberUtil;
-import micrium.calldetail.utils.RedUtil;
 import micrium.ws.Consolidado;
 import micrium.ws.DetalleTransaccionWS;
 import micrium.ws.DetalleTransaccionWS_Service;
+
 import org.apache.log4j.Logger;
 
 /**
@@ -24,6 +25,7 @@ public class DetalleLlamadaWS {
 	private static Logger log = Logger.getLogger(DetalleLlamadaWS.class);
 
 	static {
+		
 		javax.net.ssl.HttpsURLConnection
 				.setDefaultHostnameVerifier(new javax.net.ssl.HostnameVerifier() {
 					public boolean verify(String hostname,
